@@ -1,16 +1,43 @@
-# desafio002
+<h1 align="center">
+   <br>Cubos Academy<br><br>
+</h1>
 
-A new Flutter project.
+<p align="center"> Reconstruir App Demo </p> <br>
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+[//]: # (Adicione seus gifs / imagens aqui:)
 
-A few resources to get you started if this is your first Flutter project:
+<p align="center"> 
+  <img src="screenshots/desafio.png" alt="demo" height="600"> 
+</p>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<hr />
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## **Informações:**
+[//]: # (Descreva seu objetivo e o que foi usado no projeto:)
+
+* <i><strong>`Desafio`</strong></i> - `Reconstruir App Demo.`
+
+* `Scaffold()`
+* `Column()`
+* `Text()`
+* `Row()`
+* `FloatActionButtons()`
+* `setState()`
+<hr>
+
+* [x] Adicionar as mudanças aos commits (git add . para adicionar todos os arquivos ou git add nome_do_arquivo para adicionar um arquivo específico)
+
+* [x] Commitar a cada mudança significativa ou na finalização do exercício (git commit -m "Mensagem do commit")
+
+* [x] Pushar os commits na sua branch na origem (git push origin nome-da-branch)
+  
+
+<hr />
+
+
+## **Linguagens e Ferramentas:**
+[//]: # (Adicione os recursos do seu projeto aqui:)
+
+- <code><img height="20" src="https://github.com/brandaoti/organizar-github/blob/main/img/flutter.png"></code> **Flutter**
+- <code><img height="20" src="https://github.com/brandaoti/organizar-github/blob/main/img/dart.png"></code> **Dart**
