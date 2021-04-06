@@ -10,6 +10,22 @@ class ContadorPage extends StatefulWidget {
 class _ContadorPageState extends State<ContadorPage> {
   int _contador = 0;
 
+  void _add() {
+    setState(() {
+      _contador++;
+    });
+  }
+
+  void _remove() {
+    setState(() {
+      _contador--;
+
+      if (_contador <= 0) {
+        _contador = 0;
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,16 +46,16 @@ class _ContadorPageState extends State<ContadorPage> {
             Text(
               'Contador',
               style: TextStyle(
-                color: Theme.of(context).accentColor,
-                fontSize: 34,
+                color: Theme.of(context).primaryColor,
+                fontSize: 48,
                 fontWeight: FontWeight.w600,
               ),
             ),
             Text(
               '$_contador',
               style: TextStyle(
-                color: Theme.of(context).accentColor,
-                fontSize: 24,
+                color: Theme.of(context).primaryColor,
+                fontSize: 96,
                 fontWeight: FontWeight.w600,
               ),
             ),
@@ -59,6 +75,21 @@ class _ContadorPageState extends State<ContadorPage> {
               color: Colors.grey.withOpacity(.5),
               spreadRadius: 2,
               offset: Offset(0, -2),
+            ),
+          ],
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            FloatingActionButton(
+              child: Icon(Icons.remove),
+              tooltip: 'Remove elemento',
+              onPressed: _remove,
+            ),
+            FloatingActionButton(
+              child: Icon(Icons.add),
+              tooltip: 'Adicionar elemento',
+              onPressed: _add,
             ),
           ],
         ),
