@@ -1,3 +1,4 @@
+import 'package:desafio002/src/pages/contador_page.dart';
 import 'package:flutter/material.dart';
 
 class AppWidget extends StatelessWidget {
@@ -10,6 +11,7 @@ class AppWidget extends StatelessWidget {
         primaryColor: Color(0xFF6200EE),
         accentColor: Color(0xFF03FAC6),
       ),
+      home: ContadorPage(),
     );
   }
 }
